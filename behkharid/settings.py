@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_filters',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
@@ -171,7 +172,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 #use my customize user
-# AUTH_USER_MODEL = "account.User"    TODO : should be change 
+AUTH_USER_MODEL = "account.User" 
 
 
 #static files
